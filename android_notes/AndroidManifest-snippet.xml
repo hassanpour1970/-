@@ -1,0 +1,8 @@
+<!-- داخل android/app/src/main/AndroidManifest.xml (بالای <application>) -->
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<!-- گالری: image_picker از Photo Picker استفاده می‌کند و مجوز لازم ندارد.
+     ذخیره‌ی خروجی: با file_picker/share_plus (SAF) بدون مجوز کامل storage. -->
+<uses-feature android:name="android.hardware.camera" android:required="false"/>
+<uses-feature android:name="android.hardware.location.gps" android:required="false"/>
